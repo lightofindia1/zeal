@@ -1,0 +1,81 @@
+html,body{
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+body{
+	background-color:rgb(41,23,125);
+	background:url("bg.jpg") no-repeat;
+	background-size:fill;
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
+.navbar{
+	margin:30px;
+	border-bottom:1px solid #fff;
+}
+.navbar .logo{
+	float:left;
+	font-weight:bold;
+	font-size:24px;
+	padding:20px;
+}
+.navbar .nav{
+	float:left;
+	margin-left:calc(50% - 400px);
+}
+.navbar .nav li{
+	float:left;
+	font-family: 'Raleway', sans-serif;
+	list-style:none;
+	margin-left:30px;
+	padding:10px;
+}
+.navbar .nav .active{
+	font-weight:900;
+}
+.clearfix{
+	padding:0;
+	margin:0;
+	clear:both;
+}
+.container{
+	margin:50px;
+}
+.intro{
+	float:left;
+	width:calc(40% - 50px);
+	margin-left:10%;
+	padding-top:80px;
+}
+.intro h1{
+	font-size:42px;
+	font-weight:200 !important;
+}
+.intro p{
+	display:block;
+	margin-bottom:20px;
+}
+.intro .more{
+	margin-top:20px;
+	display:block;
+}
+.intro .more a{
+	padding:15px;
+}
+.intro .more .btn{
+	border:1px solid #fff;
+	border-radius:50px;
+}
+.preview{
+	float:left;
+	width:calc(40% - 50px);
+}
+.preview img{
+	width:400px;
+	height:800px;
+}
