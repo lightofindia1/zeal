@@ -79,3 +79,29 @@ a{
 	width:400px;
 	height:800px;
 }
+@media screen and (max-width:600px){
+	html,body{
+		overflow:auto !important;
+	}
+	.navbar .nav{
+		display:none;
+	}
+	.intro{
+		float:none;
+		width:100%;
+		margin:5%;
+		padding-top:20px;
+	}
+	.preview{
+		float:none;
+		width:100%;
+		margin:5%;
+	}
+	.preview img{
+		width:200px;
+		height:350px;
+	}
+	.intro *{
+		display:block !important;
+	}
+}
