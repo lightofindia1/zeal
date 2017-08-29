@@ -22,12 +22,51 @@
 		</div>
 		<div class="container">
 			<div class="intro">
-				<h1>Choose a better way to represent your product.</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-				<span class="more">
-					<a class="btn" href="#">REACH OUT TO US</a>
-					<a href="#">LEARN MORE</a>
-				</span>
+				<ul class="chat_box" id="chat-text-container">
+					<li class="chat_bubble" id="chat_bubble_1"><span id="inner-chat-text-1" style="display:none">Hello</span></li>
+					<li class="chat_bubble" id="chat_bubble_2"><span id="inner-chat-text-2" style="display:none">Welcome to this website</span></li>
+					<li class="chat_bubble" id="chat_bubble_3"><span id="inner-chat-text-3" style="display:none">Lets try something new today!</span></li>
+				</ul>
+				<script type="text/javascript">
+				  /*var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+				   var isFirefox = typeof InstallTrigger !== 'undefined';
+				   var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+				   var isIE = false || !!document.documentMode;
+				   var isEdge = !isIE && !!window.StyleMedia;
+				   var isChrome = !!window.chrome && !!window.chrome.webstore;
+				   var isBlink = (isChrome || isOpera) && !!window.CSS;*/
+				  function enableBubbleText(index) {
+					document.getElementById("inner-chat-text-" + index).style.display = "inline";
+				  }
+				  function updateBubbleText() {
+					//if (isFirefox || isSafari) {
+					var text1Width = document.getElementById("chat_bubble_1").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
+					var text2Width = document.getElementById("chat_bubble_2").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
+					var text3Width = document.getElementById("chat_bubble_3").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
+					if (text1Width > 0.75) {
+					  enableBubbleText(1);
+					}
+					if (text2Width > 0.84) {
+					  enableBubbleText(2);
+					}
+					if (text3Width > 0.83) {
+					  enableBubbleText(3);
+					}
+					if (text1Width > 0.75 && text2Width > 0.84 && text3Width > 0.83) {
+					  clearInterval(animationInterval);
+					}
+					/*} else {
+					 enableBubbleText(1);
+					 enableBubbleText(2);
+					 enableBubbleText(3);
+					 clearInterval(animationInterval);
+					 }*/
+				  }
+				  var animationInterval = setInterval(updateBubbleText, 100);
+				</script>
+				<form>
+					<input type="email" class="chat_input" placeholder="What's your email?"> <button class="chat_send">Reserve my spot</button>
+				</form>
 			</div>
 			<div class="preview">
 				<img src="iphone.png">
