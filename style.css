@@ -97,7 +97,7 @@ a{
 	border-radius:30px;
 	color:#000;
 	display:none;
-	transition:1s linear all;
+	transition:0.25s linear all;
 }
 .chat_input{
 	height:20px;
