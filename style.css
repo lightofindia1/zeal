@@ -96,6 +96,8 @@ a{
 	height:50px;
 	border-radius:30px;
 	color:#000;
+	display:none;
+	transition:1s linear all;
 }
 .chat_input{
 	height:20px;
@@ -145,5 +147,17 @@ a{
 	}
 	.intro *{
 		display:block !important;
+	}
+	.chat_bubble{
+		height:auto;
+	}
+	.chat_bubble span{
+		padding:20px;
+		height:20px;
+		visibility:hidden;
+	}
+	.chat_input{
+		width:80%;
+		margin-bottom:20px;
 	}
 }
