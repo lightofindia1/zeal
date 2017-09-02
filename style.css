@@ -100,10 +100,10 @@ a{
 	transition:0.25s linear all;
 }
 .bubble_left{
-	float:left;
+	float:left !important;
 }
 .bubble_right{
-	float:right;
+	float:right !important;
 }
 .chat_input{
 	height:20px;
